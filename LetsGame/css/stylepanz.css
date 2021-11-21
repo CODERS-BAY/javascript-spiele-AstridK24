@@ -1,0 +1,224 @@
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 15px 10px;
+}
+
+header nav {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+header nav a {
+    color: rgb(93, 240, 118);
+    text-shadow: 
+     1px  1px 1px black,
+     1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
+}
+
+body {
+    display: grid;
+    text-align: center;
+    color: rgb(93, 240, 118);
+    text-shadow: 
+     1px  1px 1px black,
+     1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
+    background-image: url("../img/pulp/panz.jpg");
+    background-size: cover;
+}
+
+
+h1 {
+    font-size: 500%;
+    display: block;
+    text-align: center;
+    color: #f4D;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #f09,
+        0 0 82px #f09,
+        0 0 92px #f09,
+        0 0 102px #f09,
+        0 0 151px #f09;
+        word-break: break-all;
+}
+h2 {
+    font-size: 150%;
+}
+h3 {
+    font-size: 120%;
+}
+
+main div {
+    flex-direction: column;
+    display: flex;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    display: list-item;
+    font-size: 120%;
+}
+
+ul li {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    display: list-item;
+}
+
+li {
+    font-size: 120%;
+}
+
+section h2{
+    font-size: 150%
+}
+
+element.style {
+    font-size: 120%;
+}
+
+p {
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+text-align: center;
+font-size: 120%;
+}
+
+@media screen and (max-width: 767px) {
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        left: 100%;
+        top: 0;
+        transition: all 500ms;
+        width: 100%;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.5rem;
+    } 
+    header nav.active {
+        left: 0;
+    }  
+}
+
+@media all and (max-width: 400px) {
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        left: 100%;
+        top: 0;
+        transition: all 500ms;
+        width: 100%;
+    }
+    header nav ul {
+        flex-direction: unset;
+        align-items: center;
+        /*line-height: 1.5rem;*/
+        font-size: 60%;
+    }
+
+    header nav ul li {
+        display: list-item;
+  
+    }
+    header nav a {
+        padding: 0;
+        text-align:-webkit-center;
+        flex-direction: unset;
+        align-items: center;
+        /*line-height: 1.5rem;*/
+        font-size: 60%;
+    }
+    header .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 20px;
+        padding: 15px 10px;
+    }
+    p {
+        font-size: 90%;
+    }
+    #select p {
+        flex-direction: column;
+        width: 44%;
+        display: unset;
+    }
+    h1 {
+        font-size: 310%;
+        margin-top: 20%;
+    }
+    ul {
+        text-align: start;
+    }
+    #userImg, #pcImg {
+        width: 45%;
+    }
+    #img1, #img2 {
+        width: 50%;
+    }      
+}
+
+/*#richtig {
+    display: inline-flex;
+    padding: 7px;
+    
+}*/
+#infoText1, #infoText2, #infoText3 {
+   /* border:1px solid black; 
+    width: 50%;
+    padding: 7px;*/
+    background-color: aliceblue;
+    width: max-content;
+}
+
+#list ol {
+    display: inline-block;
+    list-style: none;
+    /*font-size: 85%;*/
+    padding: inherit;
+}
+#list ol li {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+
+
+

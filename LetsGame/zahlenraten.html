@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "css/stylezahlen.css"/>
+    <title>zahlenraten</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html">Zurück zur Startseite</a>
+            <a href="monster.html">Monster-shooter</a>
+            <a href="schereStein.html">Schere Stein Papier</a>
+            <a href="pulpFiction.html">Pulp Fiction</a>
+            <a href="spacejam.html">Space Jam</a>
+            <a href="panzerkn.html">Panzerknacker</a>    
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Zahlen-raten</h1>
+        </div>
+        <div>
+            <ul>
+                <li>Errate eine ausgedachte Zahl.</li>
+                <li>Leg die Obergrenze der Zahl fest.</li>
+                <li>Wähl dir aus, wie oft du es versuchen willst.</li>
+            </ul>
+        </div>
+    </main>
+    <sidebar>        
+        <div>
+            <h3>Obergrenze der Zahl:</h3>    
+            <input id="grenze" type="number" min="0" value="10" name="grenze">
+        </div>
+            <img src="" alt="">
+        <div>
+        <h3>Rundenanzahl:</h3>
+        <input id="runden" type="number" min="0" value="3" name="runden">
+        </div>
+        <!--<img src="img/gr-kl/zwei.jpg" alt="klein" width="30%">-->
+    </sidebar>
+    <section>
+        <div>
+            <p>Und jetzt gehts los. Viel Glück </p>
+        </div>
+        <img id="info3" src="img/gr-kl/zr_start.jpg" alt="rate" width="20%">
+    </section>
+    <aside>
+        <div>
+            <h3>Gib hier deine Zahl ein:</h3>
+            <input id="zahl" type="number" min="0" value="1" name="zahl">
+            <button onclick="guessGame()" id="guessGame">Los</button>
+            <button onclick="tryAgain()" id="tryAgain" style="display: none;">Versuchs nochmal</button>
+            <p id="info"></p>
+            <img id="info2" src="" alt="">
+            
+        </div>
+        
+    </aside>
+ <script type="text/javascript" src="js/scriptzahlen.js"></script>   
+</body>
+</html>
+<!--< 5 />
+03 - ZAHLEN RATEN
+Errate eine ausgedachte Zahl
+• Der User legt eine obere Grenze der Zahl fest und der Computer 
+wählt eine beliebige Zahl zwischen 0 und der vom User definierten 
+oberen Grenze.
+• Für dieses Spiel brauchst du nur drei Variablen:
+• let upperLimit;
+• let guessNumber;
+• let counter;
+• Die Anzahl der Versuche soll der User ebenfalls selbst festlegen 
+können
+• Du benötigst für dieses Spiel insgesamt:
+• Vier if-Verzweigungen
+• Drei Variablen
+Weitere hilfreiche Angaben
+• Math.round()
+rundet eine Zahl
+• Math.random()
+legt eine zufällige Zahl fest-->

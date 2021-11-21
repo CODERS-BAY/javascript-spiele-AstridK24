@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 120%;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/ssp/hg2.jpg);
+    background-size: cover;
+    text-align: center;
+    color: rgb(93, 240, 118);
+    text-shadow: 
+     1px  1px 1px black,
+     1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    padding: 15px 10px;
+    font-size: 90%;    
+}
+header nav {
+    text-decoration: underline;
+    font-size: 100%;
+    width: auto;   
+}
+
+header nav a {
+    color: rgb(93, 240, 118);
+    text-shadow: 
+     1px  1px 1px black,
+     1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
+    text-decoration: none;
+}
+
+h1, hr {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 300%;
+    text-align: center;
+    color: #f4D;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #f09,
+        0 0 82px #f09,
+        0 0 92px #f09,
+        0 0 102px #f09,
+        0 0 151px #f09;
+        word-break: break-all;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+nav ul {
+    display: flex;  
+    padding-left: 0;
+    font-size: 16px; 
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.links {
+    transform: scaleX(-1);
+}
+
+.col-4 middle, p {
+    flex-direction: column;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+section  {
+    width: 25%;
+    display: none;
+    width: 30px;
+}
+
+#userImg, #pcImg {
+    width: 60%;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+#up {
+    padding: 60px;
+}
+
+@media screen and (max-width: 767px) {
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        left: 100%;
+        top: 0;
+        transition: all 500ms;
+        width: 100%;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.5rem;
+    } 
+    header nav.active {
+        left: 0;
+    }  
+}
+
+@media all and (max-width: 400px) {
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+        left: 100%;
+        top: 0;
+        transition: all 500ms;
+        width: 100%;
+        font-size: 80%;
+    }
+    header nav ul {
+        flex-direction: unset;
+        align-items: center;
+        /*line-height: 1.5rem;*/
+        font-size: 60%;
+    }
+
+    header nav ul li {
+        display: list-item;
+        text-align:-webkit-center;
+        padding: 4px;
+        margin: 4px;
+    }
+    header nav ul li a {
+        padding: 0;
+    }
+    header .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        padding: 15px 10px;
+        word-break:normal
+    }
+    #select p {
+        flex-direction: column;
+        width: 44%;
+        display: unset;
+    }
+    h1 {
+        font-size: 210%;
+    }
+    ul {
+        text-align: start;
+    }
+    #userImg, #pcImg {
+        width: 45%;
+    }   
+}
+
+
+
+
+

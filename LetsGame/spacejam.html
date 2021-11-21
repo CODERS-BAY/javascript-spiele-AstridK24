@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Jam</title>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href = "css/spacejam.css"/>
+
+</head>
+<body>
+  <header>
+    <nav class="container">
+        <a href="index.html">Zurück zur Startseite</a>
+        <a href="monster.html">Monster-shooter</a>
+        <a href="schereStein.html">Schere Stein Papier</a>
+        <a href="zahlenraten.html">Zahlen-raten</a>
+        <a href="pulpFiction.html">Pulp Fiction</a>       
+        <a href="panzerkn.html">Panzerknacker</a>
+
+    </nav>
+</header>
+<main>
+    <h1>SPACE JAM</h1>
+
+    <div class="box"> 
+        <img id="img1" src="img/spacejam/sj2.jpg" alt="sj2" width="19%" >
+               
+        <p>Die Außerirdischen sind gelandet und wollen ein Basketballspiel spielen</p>
+        <p>Das Spiel ist fast zu Ende. Wenn du in den Korb triffst, wird die Erde verschont.</p>
+        <p>Du wählst den Planeten der Entscheidung aus.</p>
+        <p>Mit 3 Versuchen musst du die Erde retten.</p>
+        <p>Viel Glück!!!</p>           
+    
+        <img id="img2" src="img/spacejam/sj1.jpg" alt="sj1" width="19%">          
+    </div>
+  </main>
+
+  <sidebar>
+    <hr>
+    <label for="force">Das sind deine Mitspieler:</label>
+
+    <div class="frame">    
+      <button class="custom-btn btn-1" id="lola" onClick="choose2('Lola')"><span>Lola Bunny</span><span>Lola</span></button>
+      <button class="custom-btn btn-1" id="bugs" onClick="choose2('Bugs')"><span>Bugs Bunny</span><span>Bugs</span></button>
+      <button class="custom-btn btn-1" id="michael" onClick="choose2('Michael')"><span>Michael Jordan</span><span>Michael</span></button>
+      <button class="custom-btn btn-1" id="taz" onClick="choose2('Taz')"><span>Taz</span><span>Taz</span></button>     
+    </div>
+    <div><img id="planet" src="img/spacejam/lola.jpg" alt="Spieler"  height="180px"></div>
+
+    <label for="force">Wähle den Planeten der Entscheidung aus:</label>
+
+    <div class="frame">    
+      <button class="custom-btn btn-1" id="pluto" onClick="choose('Pluto')"><span>Auf zum Pluto</span><span>Pluto</span></button>
+      <button class="custom-btn btn-1" id="neptun" onClick="choose('Neptun')"><span>Auf zum Neptun</span><span>Neptun</span></button>
+      <button class="custom-btn btn-1" id="saturn" onClick="choose('Saturn')"><span>Auf zum Saturn</span><span>Saturn</span></button>
+      <button class="custom-btn btn-1" id="merkur" onClick="choose('Merkur')"><span>Auf zum Merkur</span><span>Merkur</span></button>     
+    </div>
+    <div><img id="planet2" src="img/spacejam/pluto2.jpg" alt="Pluto"  height="180px"></div>
+  </sidebar>
+    
+    <section>
+      <ol>
+        <li>Gib deine Wurfkraft ein.</li>
+        <li><label for="speed">Wurfkraft (Abschussgeschwindigkeit) in m/s:</label>
+        <input type="number" id="speed" name="speed" size="5"></li>
+
+        <li>Gib deinen Abschusswinkel ein.</li>
+        <li><label for="angle">Abschusswinkel in Grad (0..360):</label>
+        <input type="number" id="angle" name="angle"></li>
+
+        <li>Nun kann es losgehen.</li>
+        <li><button onclick="hitMonster()" id="hit">  Wirf den Ball</button></li>
+
+      </ol> 
+    </section>
+      <script type="text/Javascript" src="js/scriptsj.js"></script>  
+      
+</body>
+</html>

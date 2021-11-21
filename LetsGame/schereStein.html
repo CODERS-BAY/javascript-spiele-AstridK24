@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "css/stylessp.css"/>
+    <link rel="stylesheet" href="grid/grid.css">
+    <title>Schere-Stein-Papier</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Zurück zur Startseite</a></li>
+                    <li><a href="monster.html">Monster-shooter</a></li>
+                    <li><a href="zahlenraten.html">Zahlen-raten</a></li>
+                    <li><a href="pulpFiction.html">Pulp Fiction</a></li>
+                    <li><a href="spacejam.html">Space Jam</a></li> 
+                    <li><a href="panzerkn.html">Panzerknacker</a></li>                   
+                </ul>
+            </nav>            
+        </div>
+        
+        
+    </header>
+
+    <main>
+
+        <div class="container" id="up">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Schere - Stein - Papier</h1>                          
+                </div>
+            </div>
+                <div class="col-12" id="rules">
+                <p>Die Regeln:</p>
+                    <ul> 
+                        <li>Schere gewinnt gegen Papier </li>                 
+                        <li>Papier gewinnt gegen Stein </li>                
+                        <li>Stein gewinnt gegen Schere</li>    
+                    </ul>           
+            </div>
+            <hr>
+            <div>
+                <h3>Wie oft willst du spielen?</h3>
+                <input type="number" min="1" max="10" value="3" id="counterInput" name="counterInput">
+                <!--<button onclick="readCounter()">Counter einlesen</button>-->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Klicke auf deine Wahl </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="select">
+                <div class="row">
+                    <div class="col-12 middle">
+                        <p><img onclick="playSSP(0)" src="img/ssp/schere.jpg" alt="schere" width="35%"></p>
+                        <p><img onclick="playSSP(1)" src="img/ssp/stein.jpg" alt="stein" width="35%"></p>
+                        <p><img onclick="playSSP(2)" src="img/ssp/papier.jpg" alt="papier" width="35%"></p>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>User</p>
+                    <img id="userImg" src="img/ssp/leer.jpg" alt="UserChoice"width50%>
+                </div>
+                                        
+                <div class="col-4"> 
+                    <p id="infoText"></p>
+                </div>
+               
+                <div class="col-4">
+                    <p>Pc</p>
+                    <img id="pcImg" src="img/ssp/leer.jpg" alt="PcChoice"width50%>                                        
+                </div>                            
+            </div>
+        </div>                                   
+    </main>
+    <section>
+        <img id="red" src="img/ssp/schere.gif" alt="schere" width="20%">
+        <img id="yellow" src="img/ssp/stein.gif" alt="stein" width="20%">
+        <img id="green" src="img/ssp/papier.gif" alt="papier" width="20%">
+    </section>
+    
+
+<script type="text/javascript" src="js/scriptssp.js"></script>
+                            
+</body>
+</html>
