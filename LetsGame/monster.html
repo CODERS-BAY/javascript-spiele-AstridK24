@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstershooter</title>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href = "css/monster.css"/>
+
+</head>
+<body>
+  <header>
+    <nav class="container">
+        <a href="index.html">Zurück zur Startseite</a>
+        <a href="schereStein.html">Schere Stein Papier</a>
+        <a href="zahlenraten.html">Zahlen-raten</a>
+        <a href="pulpFiction.html">Pulp Fiction</a>
+        <a href="spacejam.html">Space Jam</a>
+        <a href="panzerkn.html">Panzerknacker</a>
+
+    </nav>
+</header>
+<main>
+    <h1>Monstershooter</h1>
+
+      <div class="box">    
+        <p>Wie du weißt, fürchten sich Monster vor Kindern.</p>
+        <p>Deine Aufgabe ist: Du musst ein Kind auf das Monster schleudern.</p>
+        <p>Du hast die Planeten Erde, Mond, Mars oder Jupiter zur Auswahl</p>
+        <p>Mit 3 Versuchen solltest du es erwischt haben. Viel Glück!</p>
+    <!--</div>
+    <div class="box">-->
+        <img src="img/monster/monster2.jpg" alt="monster2" width="30%">
+    <!--</div>
+    <div class="box">-->
+        <img src="img/monster/buh.png" alt="Kinder" width="19%" >
+      </div>
+
+  </main>
+
+  <sidebar>
+    <hr>
+    <label for="force">Wähle einen Planeten aus auf dem du das Monster jagen willst:</label>
+
+    <div class="frame">    
+      <button class="custom-btn btn-1" id="erde" onClick="choose('Erde')"><span>Auf zur Erde</span><span>Erde</span></button>
+      <button class="custom-btn btn-1" id="mond" onClick="choose('Mond')"><span>Auf zum Mond</span><span>Mond</span></button>
+      <button class="custom-btn btn-1" id="mars" onClick="choose('Mars')"><span>Auf zum Mars</span><span>Mars</span></button>
+      <button class="custom-btn btn-1" id="jupiter" onClick="choose('Jupiter')"><span>Auf zum Jupiter</span><span>Jupiter</span></button>     
+    </div>
+
+    <div><img id="planet" src="img/monster/Erde_klein.jpg" alt="Erde" width="200px" height="200px"></div>
+  </sidebar>
+    
+    <section>
+      <ol>
+        <li>Gib deine Wurfkraft ein.</li>
+        <li><label for="speed">Wurfkraft (Abschussgeschwindigkeit) in m/s:</label>
+        <input type="number" id="speed" name="speed" size="5"></li>
+
+        <li>Gib deinen Abschusswinkel ein.</li>
+        <li><label for="angle">Abschusswinkel in Grad (0..360):</label>
+        <input type="number" id="angle" name="angle"></li>
+
+        <li>Nun kann es losgehen.</li>
+        <li><button onclick="hitMonster()" id="hit">  Wirf das Kind</button></li>
+        <li><button onclick="tryAgain()" id="tryAgain" style="display: none;">Versuchs nochmal</button></li>
+
+      </ol> 
+      <img id="gameOver" src="">
+
+    </section>
+    <script type="text/Javascript" src="js/scriptmonter.js"></script>  
+      
+</body>
+</html>

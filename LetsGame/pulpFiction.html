@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pulp-fiction</title>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href = "css/stylepulp.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Zurück zur Startseite</a>
+            <a href="monster.html">Monster-shooter</a>
+            <a href="schereStein.html">Schere Stein Papier</a>
+            <a href="zahlenraten.html">Zahlen-raten</a>
+            <a href="spacejam.html">Space Jam</a>
+            <a href="panzerkn.html">Panzerknacker</a>               
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>PULP - FICTION</h1>
+        </div>
+        <div>
+            <ul>
+                <li>In diesem Spiel sollst du einen 3 stelligen Zahlencode erraten</li>
+                <li>Vincent und Jules beschützen den Koffer von Marsellus Wallace</li> 
+                <li>Wenn du den Code errätst,</li> 
+                <li>darfs du den geheimen Koffer  öffnen</li>
+                <li>Die Zahl liegt zwischen 111 und 999</li>
+                <li>Du hast maximal 12 Versuche dafür</li>
+                <li>Wenn du es nicht schaffst,dann....</li>
+                <li>Viel Glück.</li>
+            </ul>
+        </div>
+    </main>
+    <sidebar>      
+        <div>
+            <h3>Wähle deine Versuche aus:</h3>   
+            <input id="versuche" type="number" min="1"  max="12" value="10" name="versuche">
+        </div>                
+    </sidebar>
+    <section>       
+        <div>
+            <h3>Gib deine Zahl ein</h3>
+            <input id="zahl" type="number" min="111"  max="999" value="111" name="zahl">
+            <button onclick="codeGame()">Los</button>
+        </div>
+        <div>               
+            <img id="infoText2" src="" alt="">            
+        </div> 
+        <div>            
+            <p id="infoText"></p>
+            <button onclick="tryAgain()" id="tryAgain" style="display: none;">Versuchs nochmal</button>
+        </div>              
+    </section>
+    <script type="text/javascript" src="js/scriptpulp.js"></script>
+</body>
+</html>
+<!--In diesem Spiel sollst du einen 3 stelligen Zahlencode erraten
+• Dafür hast du ein Input Feld mit einem mindestwert von 111 und einem Maximalwert von 999
+• Der Zahlencode generiert sich automatisch
+• Tipp: du generierst drei zahlen zwischen 1 und 9
+• Im JavaScript
+• du holst dir den Wert aus dem Inputfeld und speicherst alle drei Werte in eine eigene Variable
+• dazu benötigst du die Methode .charAt()
+• du benötigst außerdem Variablen für:
+• einen Zähler für die Versuche (maximal dürfen es 12 Versuche sein)
+• die richtig geratene Stelle
+• die richtig geratene Zahl
+• du vergleichst die einzelnen geratenen Zahlen mit den einzelnen Zahlen des Geheimcodes
+• folgende Ausgaben gibt es:
+• die Runde
+• wie viele Zahlen richtig geraten sind
+• wie viele Stellen richtig geraten wurden-->

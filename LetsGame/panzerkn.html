@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panzerknacker</title>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href = "css/stylepanz.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Zurück zur Startseite</a>
+            <a href="monster.html">Monster-shooter</a>
+            <a href="schereStein.html">Schere Stein Papier</a>
+            <a href="zahlenraten.html">Zahlen-raten</a>
+            <a href="spacejam.html">Space Jam</a>
+            <a href="pulpFiction.html">Pulp Fiction</a>
+   
+    
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Panzerknacker</h1>
+        </div>
+        <div>
+            <ul>
+                <li>In diesem Spiel sollst du einen 3 stelligen Zahlencode erraten</li>
+                <li>Die Panzerknacker sind mit dir vor dem Tresor von Dagobert Duck</li> 
+                <li>Wenn du den Code errätst,</li> 
+                <li>könnt ihr den Geldspeicher plündern</li>
+                <li>Die Zahl liegt zwischen 111 und 999</li>
+                <li>Du hast maximal 12 Versuche dafür</li>
+                <li>Wenn ihr es nicht schaffst, dann....</li>
+                <li>Viel Glück.</li>
+            </ul>
+        </div>
+    </main>
+    <sidebar> 
+        <h2>Wähle deine Versuche aus:</h2>     
+        <div>             
+            <input id="versuche" type="number" min="1"  max="12" value="10" name="versuche">
+        </div>                
+    </sidebar>
+    <section>
+        <h2>Gib deine Zahl ein</h2>
+            <div id="list">
+                <ol>
+                    <li><input id="zahl1" type="number" min="1"  max="9" value="1" name="zahl1"></li>
+                    <li><p id="infoText1"></p></li>
+                    <li><input id="zahl2" type="number" min="0"  max="9" value="1" name="zahl2"></li>
+                    <li><p id="infoText2"></p></li>
+                    <li><input id="zahl3" type="number" min="0"  max="9" value="1" name="zahl3"></li>
+                    <li><p id="infoText3"></p></li>
+                    <li><button onclick="codeGame()">Los</button></li>
+                </ol>
+        </div>
+        <div>
+            <p id="infoText4"></p>               
+            <img id="infoImg1" src="" alt="">            
+        </div>
+        
+    </section>
+    <script type="text/javascript" src="js/scriptpanzer.js"></script>
+</body>
+</html>
+<!--In diesem Spiel sollst du einen 3 stelligen Zahlencode erraten
+• Dafür hast du ein Input Feld mit einem mindestwert von 111 und einem Maximalwert von 999
+• Der Zahlencode generiert sich automatisch
+• Tipp: du generierst drei zahlen zwischen 1 und 9
+• Im JavaScript
+• du holst dir den Wert aus dem Inputfeld und speicherst alle drei Werte in eine eigene Variable
+• dazu benötigst du die Methode .charAt()
+• du benötigst außerdem Variablen für:
+• einen Zähler für die Versuche (maximal dürfen es 12 Versuche sein)
+• die richtig geratene Stelle
+• die richtig geratene Zahl
+• du vergleichst die einzelnen geratenen Zahlen mit den einzelnen Zahlen des Geheimcodes
+• folgende Ausgaben gibt es:
+• die Runde
+• wie viele Zahlen richtig geraten sind
+• wie viele Stellen richtig geraten wurden-->
